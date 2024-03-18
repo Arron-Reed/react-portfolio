@@ -1,6 +1,6 @@
 .projects {
   background-color: #f8f5f3;
-  
+
   .header {
     display: flex;
     flex-direction: column;
@@ -19,6 +19,93 @@
       font-size: 20px;
       color: #5a5a5a;
       line-height: 1.8em;
+    }
+  }
+
+  .project-container {
+  
+
+    .project {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-top: 100px;
+
+      img {
+        width: 650px;
+        margin-right: 25px;
+      }
+
+      .project-content {
+        width: 650px;
+        margin-left: 25px;
+        padding-right: 200px;
+
+        .tag {
+          background-color: black;
+          color: white;
+          font-size: 1.4rem;
+          padding: 10px 25px;
+        }
+
+        .title {
+          padding-top: 25px;
+
+          h3 {
+            font-size: 2rem;
+          }
+        }
+
+        .description {
+          padding-top: 30px;
+
+          p {
+            margin: auto;
+            font-size: 20px;
+            color: #5a5a5a;
+            line-height: 1.8em;
+          }
+        }
+      }
+
+      .project-content2 {
+        width: 650px;
+        margin-right: 25px;
+        padding-left: 200px;
+        text-align: right;
+
+        .tag2 {
+          background-color: black;
+          color: white;
+          font-size: 1.4rem;
+          padding: 10px 25px;
+        }
+
+        .title {
+          padding-top: 25px;
+
+          h3 {
+            font-size: 2rem;
+          }
+        }
+
+        .description {
+          padding-top: 30px;
+
+          p {
+            margin: auto;
+            font-size: 20px;
+            color: #5a5a5a;
+            line-height: 1.8em;
+          }
+        }
+      }
+
+      .img2 {
+        width: 650px;
+        margin-left: 25px;
+      }
     }
   }
 }
