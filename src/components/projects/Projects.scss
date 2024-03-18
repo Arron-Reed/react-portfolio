@@ -1,0 +1,22 @@
+.projects {
+    background-color: #F8F5F3;
+    margin-top: 8vh;
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 8vh;
+    
+        h2 {
+          font-size: 60px;
+          font-weight: 700;
+          margin-bottom: 15px;
+        }
+    
+        .bottom {
+          width: 30vw;
+          margin: auto;
+        }
+      }
+}
