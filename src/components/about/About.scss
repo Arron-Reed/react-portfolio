@@ -80,9 +80,10 @@
         border: 1px solid #a8a8a8;
         align-items: center;
         margin-bottom: 30px;
+        padding-right: 10px;
 
         .circle {
-          width: 80px;
+          width: 100px;
           height: 80px;
           background-color: #eae6dc;
           border-radius: 50%;
@@ -94,14 +95,20 @@
 
         }
 
-        .boxContent {
+        .title {
           display: flex;
           flex-direction: column;
 
           h4 {
-            font-size: 40px;
+            font-size: 30px;
           }
         }
+
+        .desc {
+          p {
+            font-size: 1rem;
+            }
+          }
       }
     }
   }
