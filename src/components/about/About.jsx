@@ -47,6 +47,38 @@ const About = () => {
               </div>
             </div>
           </div>
+
+          <div className="box">
+            <div className="circle">
+              <div className="icon">
+                <img src="/1.svg" alt="Web Design" className="webIcon" />
+              </div>
+            </div>
+            <div className="box-content">
+              <div className="title">
+                <h4>Web Design</h4>
+              </div>
+              <div className="desc">
+                <p>I have complete 125+ websites design for my clients</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="box">
+            <div className="circle">
+              <div className="icon">
+                <img src="/1.svg" alt="Web Design" className="webIcon" />
+              </div>
+            </div>
+            <div className="box-content">
+              <div className="title">
+                <h4>Web Design</h4>
+              </div>
+              <div className="desc">
+                <p>I have complete 125+ websites design for my clients</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
