@@ -9,20 +9,14 @@ const About = () => {
         </div>
         <div className="bottom">
           <p>
-            Quisest ut pellentesque ut laoreet. Fermentum sapien posuere sedding
-            beturd grimorbi urbna nonnyro
+            Not just a pretty face, but smart, handsome, funny, and I know every magic trick in the book! They call me the magician
           </p>
         </div>
       </div>
       <div className="content">
         <div className="description">
           <p>
-            <span>M</span>ignissim adipiscing pretium libero at tristique. Diam
-            sitting mauris a interdum. In tristique eubturg vestibulum id amet
-            malesuada. Quis morbi morbi sed volutpat tristique. Lacinia praesent
-            dictum morbi et fermentum. Blandit cras ut sed quisque pellentesque
-            iaculis elit. Lectus adipiscing semper odio lacus urna. Sit a sit ac
-            blandit. Cursus donec mollis elit arcu donec aliquam.{" "}
+            <span>W</span>hen I was little, I dreamt of being a superhero. I wanted to save the day and be strong and brave. I’d run around pretending to fly and imagine having powers. It was the best fun, and I really thought I could be a hero when I grew up. And now I am...Im a Web Developer - your Hero{" "}
           </p>
           <h4>Arron Reed</h4>
           <p>FullStack Developer</p>
