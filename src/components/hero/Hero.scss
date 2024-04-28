@@ -1,4 +1,24 @@
 .hero {
-    background-color: red;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #d3e7f0;
     height: 90vh;
+
+    .top-text {
+        display: flex;
+        flex-direction: column;
+
+        h3 {
+            font-size: 2rem;
+        }
+
+        h1 {
+            font-size: 6rem;
+            font-weight: bold;
+            color: #7fc6e4; 
+        }
+
+
+    }
 }
+

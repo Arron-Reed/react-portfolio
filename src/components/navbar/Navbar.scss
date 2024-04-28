@@ -9,8 +9,7 @@ nav {
     align-items: center;
     z-index: 99;
     border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-    background: #73bcea;
+//    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
     height: 10vh;
   }
   
@@ -20,6 +19,7 @@ nav {
   
   .logo-mobile {
     display: none;
+    z-index: 100;
   }
   
   .nav {
