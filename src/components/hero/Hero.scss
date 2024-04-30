@@ -1,24 +1,70 @@
 .hero {
+  display: flex;
+  justify-content: center;
+  background-color: #f8f5f3;
+  height: 100vh;
+  padding-top: 120px;
+  align-items: center;
+
+  .hero-left {
     display: flex;
-    justify-content: space-evenly;
-    background-color: #d3e7f0;
-    height: 90vh;
+    flex-direction: column;
+    margin-right: 30px;
+    max-width: 34vw;
 
     .top-text {
-        display: flex;
-        flex-direction: column;
+      display: flex;
+      flex-direction: column;
 
-        h3 {
-            font-size: 2rem;
-        }
+      h3 {
+        font-size: 3rem;
+        font-weight: 600;
+      }
 
-        h1 {
-            font-size: 6rem;
-            font-weight: bold;
-            color: #7fc6e4; 
-        }
+      h1 {
+        font-size: 6rem;
+        font-weight: 600;
+        color: #7fc6e4;
+      }
 
+      h2 {
+        font-size: 4rem;
+        font-weight: 900;
+      }
 
+      p {
+        font-size: 1.2rem;
+        color: #666;
+      }
     }
-}
 
+    .hero-icons {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+margin-right: 100px;
+
+      .icon-circle {
+        width: 70px;
+        height: 70px;
+        background-color: #7fc6e4;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        #icons {
+          font-size: 2.3rem;
+          color: #f8f5f3;
+        }
+      }
+    }
+  }
+
+  .hero-image {
+    display: flex;
+    margin-left: 30px;
+    align-self: flex-end;
+    height: 85vh;
+  }
+}

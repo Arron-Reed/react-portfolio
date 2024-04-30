@@ -1,4 +1,89 @@
 .projects {
-  background-color: green;
-  height: 90vh;
+  background-color: #f8f5f3;
+}
+.projects .header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 8vh;
+}
+.projects .header h2 {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.projects .header .bottom {
+  width: 30vw;
+  margin: auto;
+  font-size: 20px;
+  color: #5a5a5a;
+  line-height: 1.8em;
+}
+.projects .project-container .project {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.projects .project-container .project img {
+  width: 650px;
+  margin-right: 25px;
+}
+.projects .project-container .project .project-content {
+  width: 650px;
+  margin-left: 25px;
+  padding-right: 200px;
+}
+.projects .project-container .project .project-content .tag {
+  background-color: #7fc6e4;
+  color: white;
+  font-size: 1.4rem;
+  padding: 10px 25px;
+}
+.projects .project-container .project .project-content .title {
+  padding-top: 25px;
+}
+.projects .project-container .project .project-content .title h3 {
+  font-size: 2rem;
+}
+.projects .project-container .project .project-content .description {
+  padding-top: 30px;
+}
+.projects .project-container .project .project-content .description p {
+  margin: auto;
+  font-size: 20px;
+  color: #5a5a5a;
+  line-height: 1.8em;
+}
+.projects .project-container .project .project-content2 {
+  width: 650px;
+  margin-right: 25px;
+  padding-left: 200px;
+  text-align: right;
+}
+.projects .project-container .project .project-content2 .tag2 {
+  background-color: #7fc6e4;
+  color: white;
+  font-size: 1.4rem;
+  padding: 10px 25px;
+}
+.projects .project-container .project .project-content2 .title {
+  padding-top: 25px;
+}
+.projects .project-container .project .project-content2 .title h3 {
+  font-size: 2rem;
+}
+.projects .project-container .project .project-content2 .description {
+  padding-top: 30px;
+}
+.projects .project-container .project .project-content2 .description p {
+  margin: auto;
+  font-size: 20px;
+  color: #5a5a5a;
+  line-height: 1.8em;
+}
+.projects .project-container .project .img2 {
+  width: 650px;
+  margin-left: 25px;
 }/*# sourceMappingURL=Projects.css.map */

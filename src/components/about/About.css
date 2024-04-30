@@ -1,0 +1,97 @@
+.about .header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 8vh;
+}
+.about .header h2 {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.about .header .bottom {
+  width: 30vw;
+  margin: auto;
+  font-size: 20px;
+  color: #5a5a5a;
+  line-height: 1.8em;
+}
+.about .content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px 230px;
+}
+.about .content .description {
+  max-width: 28%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.about .content .description span {
+  font-size: 3rem;
+  color: #cac3b4;
+}
+.about .content .description p {
+  font-size: 18px;
+  color: #5a5a5a;
+  line-height: 1.8em;
+  margin-bottom: 30px;
+}
+.about .content .description h4 {
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+}
+.about .content .description .signature {
+  width: 100%;
+  margin-top: -25px;
+  margin-left: -40px;
+  transform: rotate(-4deg);
+}
+.about .content .image {
+  display: flex;
+  text-align: center;
+  margin: 0 10px;
+}
+.about .content .image img {
+  max-width: 100%;
+  height: auto;
+}
+.about .content .skills {
+  max-width: 28%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.about .content .skills .box {
+  display: flex;
+  border-radius: 10px;
+  border: 1px solid #a8a8a8;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-right: 10px;
+}
+.about .content .skills .box .circle {
+  width: 100px;
+  height: 80px;
+  background-color: #eae6dc;
+  border-radius: 50%;
+  margin: 30px;
+}
+.about .content .skills .box .circle .icon {
+  text-align: center;
+  font-size: 58px;
+}
+.about .content .skills .box .title {
+  display: flex;
+  flex-direction: column;
+}
+.about .content .skills .box .title h4 {
+  font-size: 30px;
+}
+.about .content .skills .box .desc p {
+  font-size: 1rem;
+}/*# sourceMappingURL=About.css.map */

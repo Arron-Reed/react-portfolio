@@ -10,7 +10,8 @@ nav {
   z-index: 99;
   border-bottom: 2px solid rgba(255, 255, 255, 0.5);
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-  background: #73bcea;
+  background-color: rgba(201, 228, 239, 0.7);
+  height: 10vh;
 }
 
 .logo {
@@ -19,6 +20,7 @@ nav {
 
 .logo-mobile {
   display: none;
+  z-index: 100;
 }
 
 .nav {
