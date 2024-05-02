@@ -14,7 +14,7 @@ const Navbar = () => {
           <a href="#about" className="a">About</a>
           <a href="#projects" className="a">Projects</a>
         </div>
-      </nav>  
+      </nav>
       
       <div className="mobile-nav">
         <div className="mobile-pages">
