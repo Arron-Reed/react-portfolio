@@ -34,11 +34,14 @@ const Hero = () => {
     <div className="hero">
       <div className="hero-left">
         <div className="top-text">
-          <h3>Hello, I'm a</h3>
+          <h3>Hi, I'm</h3>
+          <h1>Arron Reed</h1>
+        </div>
+        <div className="top-text">
           <h2>{`${jobTitles[index].substring(0, subIndex)}`}</h2>
           <p>
             Hi, Im Arron Reed, a passionate FullStack developer and Web Designer
-            based in Stockholm. Welcome to my portfolio
+            living in Stockholm. Welcome to my portfolio
           </p>
         </div>
         <div className="hero-icons">
@@ -57,7 +60,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="hero-image">
-        <img src="/hero-me2.png" alt="Arron Reed" />
+        <img src="/hero-me5.png" alt="Arron Reed" />
       </div>
     </div>
   );

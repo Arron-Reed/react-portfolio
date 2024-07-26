@@ -3,19 +3,20 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 7px 100px;
+  padding: 7px 300px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 99;
   border-bottom: 2px solid rgba(255, 255, 255, 0.5);
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-  background-color: rgba(201, 228, 239, 0.7);
-  height: 10vh;
+  background-color: rgba(51, 59, 80, 0.5);
+  height: 9vh;
+  z-index: 99;
 }
 
 .logo {
-  height: 70px;
+  height: 60px;
 }
 
 .logo-mobile {
@@ -26,15 +27,16 @@ nav {
 .nav {
   display: flex;
   align-items: center;
+  margin-right: 450px;
 }
 
 .nav .a {
   position: relative;
   font-size: 1.3em;
-  color: #7fc6e4;
+  color: #ffffff;
   text-decoration: none;
   font-weight: 500;
-  margin-right: 60px;
+  margin-right: 80px;
 }
 
 .nav .login-button {
