@@ -17,11 +17,13 @@ const About = () => {
       <div className="content">
         <div className="description">
           <p>
-            <span>W</span>hen I was little, I dreamt of being a superhero. I
-            wanted to save the day and be strong and brave. I’d run around
-            pretending to fly and imagine having powers. It was the best fun,
-            and I really thought I could be a hero when I grew up. And now I
-            am...Im a Web Developer - your Hero{" "}
+            <span>D</span>edicated and passionate is how people describe me,
+            seeking to launch a successful career in web development. With a strong
+            foundation in coding and a keen eye for design, I am eager to join a
+            secure and forward-thinking company where I can further develop my
+            skills. My mission is to ultimately become a senior
+            member of your staff and to make a difference, driving impactful digital
+            solutions and contributing to the teams success.
           </p>
           <h4>Arron Reed</h4>
           <p>FullStack Developer</p>
