@@ -1,0 +1,62 @@
+.skills {
+  background-color: #f8f5f3;
+
+  .bg {
+    background: url(/noise.png);
+    z-index: -1;
+    width: 100%;
+
+    .header {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding-top: 8vh;
+
+      h2 {
+        font-size: 60px;
+        font-weight: 700;
+        margin-bottom: 15px;
+      }
+
+      .bottom {
+        width: 30vw;
+        margin: auto;
+        font-size: 20px;
+        color: #5a5a5a;
+        line-height: 1.8em;
+        margin-bottom: 50px;
+      }
+    }
+
+    .slider {
+      overflow: hidden;
+      width: 100%;
+      height: auto;
+      position: relative;
+      padding-bottom: 8vh;
+
+      .slideTrack {
+        display: flex;
+        width: calc(11% * 20); // Here I need to adjust
+        animation: scroll 40s linear infinite;
+
+        .slide {
+          padding: 10px 10px;
+          flex: 20 20 auto;
+          width: 10%; //Adjust here based on numer of slides
+          height: auto;
+          transition: transform 0.5s ease-in-out;
+
+          @keyframes scroll {
+            from {
+              transform: translateX(0);
+            }
+            to {
+              transform: translateX(-50%);
+            }
+          }
+        }
+      }
+    }
+  }
+}
