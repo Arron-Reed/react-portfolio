@@ -1,5 +1,6 @@
 .about {
  // height: 100vh;
+ background-image: url("./noise.png");
 
   .header {
     display: flex;
@@ -93,6 +94,7 @@
           background-color: #eae6dc;
           border-radius: 50%;
           margin: 30px;
+          
           .icon {
             text-align: center;
             font-size: 58px;
