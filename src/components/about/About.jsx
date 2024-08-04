@@ -7,12 +7,6 @@ const About = () => {
         <div className="top">
           <h2>Why Hire Me?</h2>
         </div>
-        <div className="bottom">
-          <p>
-            Not just a pretty face, but smart, handsome, funny, and I know every
-            magic trick in the book! They call me the magician
-          </p>
-        </div>
       </div>
       <div className="content">
         <div className="description">

@@ -1,6 +1,6 @@
 .skills {
   background-color: #f8f5f3;
-  height: 100vh;
+  height: 109vh;
 
   .bg {
     background: url(/noise.png);
@@ -11,21 +11,20 @@
       display: flex;
       flex-direction: column;
       text-align: center;
-      padding-top: 8vh;
 
       h2 {
         font-size: 60px;
         font-weight: 700;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
+        padding-top: 11vh;
       }
 
       .bottom {
-        
         margin: auto;
         font-size: 20px;
         color: #5a5a5a;
         line-height: 1.8em;
-        margin-bottom: 50px;
+        margin-bottom: 0px;
       }
     }
 
@@ -34,7 +33,7 @@
       width: 100%;
       height: auto;
       position: relative;
-      padding-bottom: 8vh;
+      
 
       .slideTrack {
         display: flex;
@@ -42,7 +41,7 @@
         animation: scroll 60s linear infinite;
 
         .slide {
-          padding: 30px 50px;
+          padding: 20px 50px;
           flex: 20 20 auto;
           width: 100%; //Adjust here based on numer of slides
           height: auto;

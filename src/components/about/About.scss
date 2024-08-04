@@ -1,25 +1,16 @@
 .about {
- // height: 100vh;
+ height: 133vh;
  background-image: url("./noise.png");
+ padding-top: 44vh;
 
   .header {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding-top: 8vh;
 
     h2 {
       font-size: 60px;
       font-weight: 700;
-      margin-bottom: 15px;
-    }
-
-    .bottom {
-      width: 30vw;
-      margin: auto;
-      font-size: 20px;
-      color: #5a5a5a;
-      line-height: 1.8em;
     }
   }
 
@@ -28,7 +19,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin: 50px 230px;
+    margin: 20px 230px;
 
     .description {
       max-width: 28%;
@@ -94,7 +85,7 @@
           background-color: #eae6dc;
           border-radius: 50%;
           margin: 30px;
-          
+
           .icon {
             text-align: center;
             font-size: 58px;

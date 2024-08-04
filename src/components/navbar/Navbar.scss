@@ -3,7 +3,7 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 7px 300px;
+  padding: 7px 222px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,7 +27,7 @@ nav {
 .nav {
   display: flex;
   align-items: center;
-  margin-right: 450px;
+  margin-right: 550px;
 }
 
 .nav .a {
@@ -36,26 +36,7 @@ nav {
   color: #ffffff;
   text-decoration: none;
   font-weight: 500;
-  margin-right: 80px;
-}
-
-.nav .login-button {
-  padding: 11px 40px;
-  height: 50px;
-  background: transparent;
-  border: 2px solid #fff;
-  outline: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 1.3em;
-  color: #fff;
-  font-weight: 500;
-  transition: 0.5s;
-}
-
-.nav .login-button:hover {
-  background: #fff;
-  color: #162938;
+  margin-right: 100px;
 }
 
 .nav a::after {
@@ -75,26 +56,6 @@ nav {
 .nav .a:hover::after {
   transform-origin: left;
   transform: scaleX(1);
-}
-
-nav .btnLogin-popup {
-  width: 130px;
-  height: 50px;
-  background: transparent;
-  border: 2px solid #fff;
-  outline: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 1.1em;
-  color: #fff;
-  font-weight: 500;
-  margin-left: 40px;
-  transition: 0.5s;
-}
-
-.nav .btnLogin-popup:hover {
-  background: #fff;
-  color: #162938;
 }
 
 .mobile-nav {
