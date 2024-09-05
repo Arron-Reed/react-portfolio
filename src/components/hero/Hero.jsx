@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Modal from "../cv-modal/cv-modal";
 import "./Hero.scss";
 
 const Hero = () => {
@@ -10,6 +11,10 @@ const Hero = () => {
   const [index, setIndex] = useState(0);
   const [subIndex, setSubIndex] = useState(0);
   const [reverse, setReverse] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => setModalOpen(true);
+  const closeModal = () => setModalOpen(false);
 
   useEffect(() => {
     if (subIndex === jobTitles[index].length + 1 && !reverse) {
@@ -31,8 +36,8 @@ const Hero = () => {
   }, [subIndex, index, reverse]);
 
   return (
-    <div className="wrapper">
-      <div className="hero">
+    <div className="hero">
+      <div className="hero-content">
         <div className="hero-left">
           <div className="top-text">
             <h3>Hi, I'm</h3>
@@ -56,10 +61,11 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="hero-image">
-          <img src="/hero-me5.png" alt="Arron Reed" />
-        </div>
       </div>
+      <div className="hero-image">
+        <img src="/hero-me5.png" alt="Arron Reed" />
+      </div>
+
       <div className="infoBlock">
         <div className="infoBlock-top">
           <img src="ARlogo-column.png" alt="Arron Reed" />
@@ -74,8 +80,11 @@ const Hero = () => {
             portfolio.
           </p>
         </div>
-        <button>See my CV</button>
+        <button onClick={openModal}>See my CV</button>
       </div>
+
+      <Modal isOpen={modalOpen} onClose={closeModal} />
+      
     </div>
   );
 };
