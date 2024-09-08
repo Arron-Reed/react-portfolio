@@ -1,6 +1,22 @@
+import React, { useState } from "react";
 import "./Projects.scss";
+import Lightbox from "../lightbox/Lightbox";
+import projectsData from "./projectsData";
 
 const Projects = () => {
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [currentImage, setCurrentImage] = useState(null);
+
+  const openLightbox = (imgSrc) => {
+    setCurrentImage(imgSrc);
+    setLightboxOpen(true);
+  };
+
+  const closeLightbox = () => {
+    setLightboxOpen(false);
+    setCurrentImage(null);
+  };
+
   return (
     <section className="projects" id="projects">
       <div className="header">
@@ -12,49 +28,35 @@ const Projects = () => {
         </div>
       </div>
       <div className="project-container">
-        <div className="project">
-          <div>
-            <img src="./project1.png" alt="weather app" />
-          </div>
-          <div className="project-content">
-            <div className="tag">
-              <h5>Skifield App</h5>
+        {projectsData.map((project, index) => (
+          <div
+            className={`project ${index % 2 === 0 ? "left" : "right"}`}
+            key={project.id}
+          >
+            <div onClick={() => openLightbox(project.imgSrc)}>
+              <img src={project.imgSrc} alt={project.altText} />
             </div>
-            <div className="title">
-              <h3>FullStack Skifield Application</h3>
-            </div>
-            <div className="description">
-              <p>
-                A full-stack app with React, Express.js, Sass, TypeScript, and
-                MongoDB, offering information on Swedens ski fields, including
-                maps, skifield info and pricing
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="project">
-          <div className="project-content2">
-            <div className="tag2">
-              <h5>Skifield App</h5>
-            </div>
-            <div className="title">
-              <h3>FullStack Skifield Application</h3>
-            </div>
-            <div className="description">
-              <p>
-                A full-stack app with React, Express.js, Sass, TypeScript, and
-                MongoDB, offering information on Swedens ski fields, including
-                maps, skifield info and pricing
-              </p>
+            <div className="project-content">
+              <div className="tag">
+                <h5>{project.tag}</h5>
+              </div>
+              <div className="title">
+                <h3>{project.title}</h3>
+              </div>
+              <div className="description">
+                <p>{project.description}</p>
+              </div>
             </div>
           </div>
-          <div className="img2">
-            <img src="./project1.png" alt="weather app" />
-          </div>
-        </div>
-
+        ))}
       </div>
+      {lightboxOpen && (
+        <Lightbox
+          imgSrc={currentImage}
+          altText="Project Image"
+          onClose={closeLightbox}
+        />
+      )}
     </section>
   );
 };

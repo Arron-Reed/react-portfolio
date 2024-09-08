@@ -1,13 +1,10 @@
 .projects {
-  background-color: #f8f5f3;
+  background-color: #fff;
 
   .header {
-    display: flex;
-    flex-direction: column;
     text-align: center;
     padding-top: 8vh;
 
-    
     h2 {
       font-size: 60px;
       font-weight: 700;
@@ -24,26 +21,31 @@
   }
 
   .project-container {
-  
-
     .project {
       display: flex;
-      flex-direction: row;
       justify-content: center;
       align-items: center;
       margin-top: 100px;
 
+      &.left {
+        flex-direction: row;
+      }
+
+      &.right {
+        flex-direction: row-reverse;
+      }
+
       img {
         border: 1px solid black;
         width: 650px;
-        margin-right: 25px;
+        margin: 0 25px;
         padding: 10px;
+        cursor: pointer;
       }
 
       .project-content {
         width: 650px;
-        margin-left: 25px;
-        padding-right: 200px;
+        margin: 0 25px;
 
         .tag {
           background-color: #7fc6e4;
@@ -64,50 +66,11 @@
           padding-top: 30px;
 
           p {
-            margin: auto;
             font-size: 20px;
             color: #5a5a5a;
             line-height: 1.8em;
           }
         }
-      }
-
-      .project-content2 {
-        width: 650px;
-        margin-right: 25px;
-        padding-left: 200px;
-        text-align: right;
-
-        .tag2 {
-          background-color: #7fc6e4;
-          color: white;
-          font-size: 1.4rem;
-          padding: 10px 25px;
-        }
-
-        .title {
-          padding-top: 25px;
-
-          h3 {
-            font-size: 2rem;
-          }
-        }
-
-        .description {
-          padding-top: 30px;
-
-          p {
-            margin: auto;
-            font-size: 20px;
-            color: #5a5a5a;
-            line-height: 1.8em;
-          }
-        }
-      }
-
-      .img2 {
-        width: 650px;
-        margin-left: 25px;
       }
     }
   }
