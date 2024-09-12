@@ -35,8 +35,8 @@
         flex-direction: row-reverse;
       }
 
-      img {
-        border: 1px solid black;
+      .project-image {
+        border-radius: 30px;
         width: 650px;
         margin: 0 25px;
         padding: 10px;
@@ -69,6 +69,18 @@
             font-size: 20px;
             color: #5a5a5a;
             line-height: 1.8em;
+          }
+        }
+
+        .tech-icons {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          margin-top: 20px;
+
+          .tech-icon {
+            width: 80px;
+            height: auto;
           }
         }
       }

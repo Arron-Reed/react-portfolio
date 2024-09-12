@@ -34,7 +34,7 @@ const Projects = () => {
             key={project.id}
           >
             <div onClick={() => openLightbox(project.imgSrc)}>
-              <img src={project.imgSrc} alt={project.altText} />
+              <img src={project.imgSrc} alt={project.altText} className="project-image" />
             </div>
             <div className="project-content">
               <div className="tag">
@@ -45,6 +45,16 @@ const Projects = () => {
               </div>
               <div className="description">
                 <p>{project.description}</p>
+              </div>
+              <div className="tech-icons">
+                {project.technologies.map((technologies, idx) => (
+                  <img
+                    key={idx}
+                    src={technologies.icon}
+                    alt={technologies.name}
+                    className="tech-icon"
+                  />
+                ))}
               </div>
             </div>
           </div>
