@@ -57,40 +57,6 @@ nav {
   transform: scaleX(1);
 }
 
-.mobile-nav {
-  display: none;
-}
-
-.mobile-pages i {
-  font-size: 2em;
-  color: #fff;
-  margin-top: 13px;
-}
-
-.mobile-pages ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 10vh;
-}
-
-.mobile-pages li {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.mobile-pages li h3 {
-  color: #fff;
-  font-size: 0.7rem;
-}
-
-.logged {
-  display: flex;
-  justify-content: space-evenly;
-  width: 40vw;
-}
-
 @media only screen and (max-width: 1650px) {
   nav {
     padding: 7px 200px;
@@ -115,103 +81,16 @@ nav {
   }
 }
 
-/*
-@media only screen and (max-width: 1187px) {
+@media only screen and (max-width: 1000px) {
+  nav {
+    padding: 7px 10px;
+  }
+
+  .nav .a {
+    margin-right: 50px;
+  }
+
   .logo {
-    display: none;
-  }
-
-  .logo-mobile {
-    display: block;
-    height: 70px;
+    margin-right: 100px;
   }
 }
-
-@media only screen and (max-width: 950px) {
-  nav {
-    padding: 7px 70px;
-  }
-
-  .nav .a {
-    font-size: 1.2em;
-    margin-right: 40px;
-  }
-
-  .nav .login-button {
-    padding: 11px 30px;
-    height: 50px;
-    font-size: 1.2em;
-  }
-}
-
-@media only screen and (max-width: 850px) {
-  nav {
-    padding: 7px 50px;
-  }
-
-  .nav .a {
-    font-size: 1.2em;
-    margin-right: 30px;
-  }
-
-  .nav .login-button {
-    padding: 7px 20px;
-    height: 45px;
-    font-size: 1.2em;
-  }
-}
-
-@media only screen and (max-width: 750px) {
-  nav {
-    padding: 7px 30px;
-  }
-
-  .nav .a {
-    margin-right: 20px;
-  }
-}
-
-@media only screen and (max-width: 650px) {
-  nav {
-    display: none;
-  }
-
-  .navbar-space {
-    display: none;
-  }
-
-  .mobile-nav {
-    display: block;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    z-index: 50;
-    border-top: 2px solid rgba(255, 255, 255, 0.5);
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-    background: #73bcea;
-  }
-
-  footer {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .mobile-pages i {
-    font-size: 1.5em;
-    margin-top: 13px;
-  }
-
-  .mobile-pages ul {
-    height: 10vh;
-  }
-
-  .mobile-pages li h3 {
-    font-size: 0.6rem;
-  }
-
-  .logged {
-    width: 41vw;
-  }
-}
-*/

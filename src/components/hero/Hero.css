@@ -46,10 +46,6 @@
   font-weight: 700;
   color: #ffffff;
 }
-.hero .hero-left .top-text p {
-  font-size: 1.3rem;
-  color: #ffffff;
-}
 .hero .hero-left .hero-icons {
   display: flex;
   flex-direction: row;
@@ -132,7 +128,34 @@
 @media only screen and (max-width: 1187px) {
   .hero::before {
     background-image: url(./hero-me2.png);
+    z-index: 0;
   }
+  .hero .hero-left {
+    width: 550px;
+    margin-left: 50px;
+    margin-top: 200px;
+  }
+  .hero .hero-left .top-text h3 {
+    font-size: 2.5rem;
+  }
+  .hero .hero-left .top-text h1 {
+    font-size: 4rem;
+  }
+  .hero .hero-left .top-text h2 {
+    font-size: 2rem;
+  }
+  .hero .hero-left .hero-icons {
+    z-index: 3;
+  }
+  .hero .hero-left .hero-icons .icon-circle {
+    width: 70px;
+    height: 70px;
+  }
+  .hero .hero-left .hero-icons .icon-circle #icons {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width: 900px) {
   .hero .hero-left {
     width: 550px;
     margin-left: 20px;
@@ -147,11 +170,36 @@
   .hero .hero-left .top-text h2 {
     font-size: 2rem;
   }
-  .hero .hero-left .hero-icons padding .icon-circle {
-    width: 40px;
-    height: 40px;
+}
+@media only screen and (max-width: 760px) {
+  .hero::before {
+    background-image: url(./hero-me4.png);
+    z-index: 0;
   }
-  .hero .hero-left .hero-icons padding .icon-circle #icons {
-    font-size: 1.5rem;
+  .hero .hero-left {
+    position: relative;
+    width: 420px;
+    margin-left: 20px;
+    margin-top: 250px;
+  }
+  .hero .hero-left .top-text h3 {
+    font-size: 2rem;
+  }
+  .hero .hero-left .top-text h1 {
+    font-size: 3.5rem;
+  }
+  .hero .hero-left .top-text h2 {
+    font-size: 1.8rem;
+    margin-bottom: -10px;
+  }
+  .hero .hero-left .hero-icons {
+    z-index: 3;
+  }
+  .hero .hero-left .hero-icons .icon-circle {
+    width: 50px;
+    height: 50px;
+  }
+  .hero .hero-left .hero-icons .icon-circle #icons {
+    font-size: 1.8rem;
   }
 }/*# sourceMappingURL=Hero.css.map */
