@@ -1,7 +1,6 @@
 .about {
- height: 133vh;
- padding-top: 44vh;
- 
+  height: 133vh;
+  padding-top: 44vh;
 
   .header {
     display: flex;
@@ -104,6 +103,99 @@
         .desc {
           p {
             font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1650px) {
+  .about {
+    height: 133vh;
+    padding-top: 44vh;
+
+    .header {
+      h2 {
+        font-size: 50px;
+      }
+    }
+
+    .content {
+      margin: 20px 150px;
+
+      .description {
+        max-width: 30%;
+
+        span {
+          font-size: 3rem;
+        }
+
+        p {
+          line-height: 1.5em;
+          margin-bottom: 30px;
+        }
+      }
+
+      .talents {
+        max-width: 30%;
+
+        .box {
+          margin-bottom: 30px;
+          padding-right: 10px;
+
+          .circle {
+            width: 120px;
+            height: 70px;
+            margin: 30px;
+
+            .icon {
+              font-size: 54px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .about {
+    height: 133vh;
+    padding-top: 45vh;
+
+    .header {
+      h2 {
+        font-size: 50px;
+      }
+    }
+
+    .content {
+      margin: 35px 100px;
+
+      .description {
+        max-width: 30%;
+
+        p {
+          line-height: 1.3em;
+          margin-bottom: 30px;
+        }
+      }
+
+      .talents {
+        max-width: 30%;
+
+        .box {
+          margin-bottom: 30px;
+          padding-right: 10px;
+
+          .circle {
+            width: 120px;
+            height: 70px;
+            margin: 30px;
+
+            .icon {
+              font-size: 54px;
+            }
           }
         }
       }

@@ -29,37 +29,41 @@ const Projects = () => {
       </div>
       <div className="project-container">
         {projectsData.map((project, index) => (
-          <div
-            className={`project ${index % 2 === 0 ? "left" : "right"}`}
-            key={project.id}
-          >
-            <div onClick={() => openLightbox(project.imgSrc)}>
-              <img src={project.imgSrc} alt={project.altText} className="project-image" />
+          <div className="project-box">
+            <div className="tag">
+              <h5>{project.title}</h5>
             </div>
-            <div className="project-content">
-              <div className="tag">
-                <h5>{project.tag}</h5>
+            <div
+              className={`project ${index % 2 === 0 ? "left" : "right"}`}
+              key={project.id}
+            >
+              <div onClick={() => openLightbox(project.imgSrc)}>
+                <img
+                  src={project.imgSrc}
+                  alt={project.altText}
+                  className="project-image"
+                />
               </div>
-              <div className="title">
-                <h3>{project.title}</h3>
-              </div>
-              <div className="description">
-                <p>{project.description}</p>
-              </div>
+              <div className="project-content">
               <div className="tech-icons">
-                {project.technologies.map((technologies, idx) => (
-                  <img
-                    key={idx}
-                    src={technologies.icon}
-                    alt={technologies.name}
-                    className="tech-icon"
-                  />
-                ))}
+                  {project.technologies.map((technologies, idx) => (
+                    <img
+                      key={idx}
+                      src={technologies.icon}
+                      alt={technologies.name}
+                      className="tech-icon"
+                    />
+                  ))}
+                </div>
+                <div className="description">
+                  <p>{project.description}</p>
+                </div>
               </div>
             </div>
           </div>
         ))}
       </div>
+
       {lightboxOpen && (
         <Lightbox
           imgSrc={currentImage}

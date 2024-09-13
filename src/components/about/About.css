@@ -1,27 +1,22 @@
+.about {
+  height: 133vh;
+  padding-top: 44vh;
+}
 .about .header {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding-top: 8vh;
 }
 .about .header h2 {
   font-size: 60px;
   font-weight: 700;
-  margin-bottom: 15px;
-}
-.about .header .bottom {
-  width: 30vw;
-  margin: auto;
-  font-size: 20px;
-  color: #5a5a5a;
-  line-height: 1.8em;
 }
 .about .content {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin: 50px 230px;
+  margin: 20px 230px;
 }
 .about .content .description {
   max-width: 28%;
@@ -60,13 +55,13 @@
   max-width: 100%;
   height: auto;
 }
-.about .content .skills {
+.about .content .talents {
   max-width: 28%;
   display: flex;
   flex-direction: column;
   text-align: left;
 }
-.about .content .skills .box {
+.about .content .talents .box {
   display: flex;
   border-radius: 10px;
   border: 1px solid #a8a8a8;
@@ -74,24 +69,96 @@
   margin-bottom: 30px;
   padding-right: 10px;
 }
-.about .content .skills .box .circle {
+.about .content .talents .box .circle {
   width: 100px;
   height: 80px;
   background-color: #eae6dc;
   border-radius: 50%;
   margin: 30px;
 }
-.about .content .skills .box .circle .icon {
+.about .content .talents .box .circle .icon {
   text-align: center;
   font-size: 58px;
 }
-.about .content .skills .box .title {
+.about .content .talents .box .title {
   display: flex;
   flex-direction: column;
 }
-.about .content .skills .box .title h4 {
+.about .content .talents .box .title h4 {
   font-size: 30px;
 }
-.about .content .skills .box .desc p {
+.about .content .talents .box .desc p {
   font-size: 1rem;
+}
+
+@media only screen and (max-width: 1650px) {
+  .about {
+    height: 133vh;
+    padding-top: 44vh;
+  }
+  .about .header h2 {
+    font-size: 50px;
+  }
+  .about .content {
+    margin: 20px 150px;
+  }
+  .about .content .description {
+    max-width: 30%;
+  }
+  .about .content .description span {
+    font-size: 3rem;
+  }
+  .about .content .description p {
+    line-height: 1.5em;
+    margin-bottom: 30px;
+  }
+  .about .content .talents {
+    max-width: 30%;
+  }
+  .about .content .talents .box {
+    margin-bottom: 30px;
+    padding-right: 10px;
+  }
+  .about .content .talents .box .circle {
+    width: 120px;
+    height: 70px;
+    margin: 30px;
+  }
+  .about .content .talents .box .circle .icon {
+    font-size: 54px;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .about {
+    height: 133vh;
+    padding-top: 45vh;
+  }
+  .about .header h2 {
+    font-size: 50px;
+  }
+  .about .content {
+    margin: 35px 100px;
+  }
+  .about .content .description {
+    max-width: 30%;
+  }
+  .about .content .description p {
+    line-height: 1.3em;
+    margin-bottom: 30px;
+  }
+  .about .content .talents {
+    max-width: 30%;
+  }
+  .about .content .talents .box {
+    margin-bottom: 30px;
+    padding-right: 10px;
+  }
+  .about .content .talents .box .circle {
+    width: 120px;
+    height: 70px;
+    margin: 30px;
+  }
+  .about .content .talents .box .circle .icon {
+    font-size: 54px;
+  }
 }/*# sourceMappingURL=About.css.map */

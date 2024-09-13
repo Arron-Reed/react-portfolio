@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Modal from "../cv-modal/cv-modal";
 import "./Hero.scss";
 
 const Hero = () => {
@@ -11,10 +10,6 @@ const Hero = () => {
   const [index, setIndex] = useState(0);
   const [subIndex, setSubIndex] = useState(0);
   const [reverse, setReverse] = useState(false);
-  const [modalOpen, setModalOpen] = useState(false);
-
-  const openModal = () => setModalOpen(true);
-  const closeModal = () => setModalOpen(false);
 
   useEffect(() => {
     if (subIndex === jobTitles[index].length + 1 && !reverse) {
@@ -62,29 +57,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="hero-image">
-        <img src="/hero-me5.png" alt="Arron Reed" />
-      </div>
-
-      <div className="infoBlock">
-        <div className="infoBlock-top">
-          <img src="ARlogo-column.png" alt="Arron Reed" />
-        </div>
-        <div className="infoBlock-text">
-          <p>
-            Hi, Im Arron Reed, a passionate FullStack developer and Web Designer
-            living in Stockholm. Welcome to my portfolio. Hi, Im Arron Reed, a
-            passionate FullStack developer and Web Designer living in Stockholm.
-            Welcome to my portfolio. Hi, Im Arron Reed, a passionate FullStack
-            developer and Web Designer living in Stockholm. Welcome to my
-            portfolio.
-          </p>
-        </div>
-        <button onClick={openModal}>See my CV</button>
-      </div>
-
-      <Modal isOpen={modalOpen} onClose={closeModal} />
-      
+      <div className="hero-image"></div>
     </div>
   );
 };

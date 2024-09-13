@@ -1,9 +1,9 @@
 .projects {
   background-color: #fff;
+  padding-top: 11vh;
 
   .header {
     text-align: center;
-    padding-top: 8vh;
 
     h2 {
       font-size: 60px;
@@ -21,66 +21,195 @@
   }
 
   .project-container {
-    .project {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 100px;
+    .project-box {
+      background-color: #eee;
+      border: 1px solid blue;
+      border-radius: 30px;
+      margin: 30px 222px;
+      overflow: hidden;
 
-      &.left {
-        flex-direction: row;
+      .tag {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #7fc6e4;
+        color: black;
+        font-size: 2.5rem;
+        width: 100%;
+        height: 50px;
       }
 
-      &.right {
-        flex-direction: row-reverse;
-      }
+      .project {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
 
-      .project-image {
-        border-radius: 30px;
-        width: 650px;
-        margin: 0 25px;
-        padding: 10px;
-        cursor: pointer;
-      }
-
-      .project-content {
-        width: 650px;
-        margin: 0 25px;
-
-        .tag {
-          background-color: #7fc6e4;
-          color: white;
-          font-size: 1.4rem;
-          padding: 10px 25px;
+        &.left {
+          flex-direction: row;
         }
 
-        .title {
-          padding-top: 25px;
+        &.right {
+          flex-direction: row-reverse;
+        }
 
-          h3 {
-            font-size: 2rem;
+        .project-image {
+          border-radius: 30px;
+          width: 650px;
+          margin: 0 25px;
+          padding: 10px;
+          cursor: pointer;
+        }
+
+        .project-content {
+          width: 650px;
+          margin: 0 25px;
+
+          .title {
+            padding-top: 25px;
+
+            h3 {
+              font-size: 2rem;
+            }
+          }
+
+          .description {
+            padding-top: 30px;
+
+            p {
+              font-size: 20px;
+              color: #5a5a5a;
+              line-height: 1.8em;
+            }
+          }
+
+          .tech-icons {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 20px;
+
+            .tech-icon {
+              width: 80px;
+              height: auto;
+            }
           }
         }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1650px) {
+  .projects {
+    .header {
+      h2 {
+        font-size: 50px;
+        margin-bottom: 20px;
+      }
+    }
 
-        .description {
-          padding-top: 30px;
+    .project-container {
+      .project-box {
+        margin: 30px 200px;
 
-          p {
-            font-size: 20px;
-            color: #5a5a5a;
-            line-height: 1.8em;
+        .project {
+          .project-image {
+            width: 450px;
+            margin: 0 0px;
+            padding: 0px;
+          }
+
+          .project-content {
+            width: 650px;
+            margin: 0 25px;
+
+            .tag {
+              font-size: 1.4rem;
+              padding: 10px 25px;
+            }
+
+            .title {
+              padding-top: 5px;
+
+              h3 {
+                font-size: 1.8rem;
+              }
+            }
+
+            .description {
+              padding-top: 10px;
+
+              p {
+                font-size: 20px;
+                line-height: 1.2em;
+              }
+            }
+
+            .tech-icons {
+              margin: 10px;
+
+              .tech-icon {
+                width: 70px;
+                height: auto;
+              }
+            }
           }
         }
+      }
+    }
+  }
+}
 
-        .tech-icons {
-          display: flex;
-          justify-content: space-around;
-          align-items: center;
-          margin-top: 20px;
+@media only screen and (max-width: 1400px) {
+  .projects {
+    .bottom {
+      display: none;
+    }
+    .project-container {
+      .project-box {
+        margin: 30px 100px;
 
-          .tech-icon {
-            width: 80px;
-            height: auto;
+        .project {
+          .project-image {
+            width: 450px;
+            margin: 0 0px;
+            padding: 0px;
+          }
+
+          .project-content {
+            width: 650px;
+            margin: 0 25px;
+
+            .tag {
+              font-size: 1.4rem;
+              padding: 10px 25px;
+            }
+
+            .title {
+              padding-top: 5px;
+
+              h3 {
+                font-size: 1.8rem;
+              }
+            }
+
+            .description {
+              padding-top: 10px;
+
+              p {
+                font-size: 20px;
+                line-height: 1.2em;
+              }
+            }
+
+            .tech-icons {
+              margin: 10px;
+
+              .tech-icon {
+                width: 70px;
+                height: auto;
+              }
+            }
           }
         }
       }

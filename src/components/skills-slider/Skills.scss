@@ -1,6 +1,7 @@
 .skills {
   background-color: #f8f5f3;
   height: 100vh;
+  padding-top: 11vh;
 
   .bg {
     background: url(/noise.png);
@@ -17,7 +18,6 @@
         font-size: 60px;
         font-weight: 700;
         margin-bottom: 10px;
-        padding-top: 11vh;
       }
 
       .bottom {
@@ -34,7 +34,6 @@
       width: 100%;
       height: auto;
       position: relative;
-      
 
       .slideTrack {
         display: flex;
@@ -55,6 +54,36 @@
             to {
               transform: translateX(-158%);
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1650px) {
+  .skills {
+    .bg {
+      .header {
+        h2 {
+          font-size: 50px;
+          margin-bottom: 20px;
+        }
+
+        .bottom {
+          margin-bottom: 20px;
+        }
+      }
+
+      .slider {
+        .slideTrack {
+          display: flex;
+          width: calc(11% * 46); // Here I need to adjust
+          animation: scroll 60s linear infinite;
+
+          .slide {
+            padding: 20px 50px;
+            height: 280px;
           }
         }
       }

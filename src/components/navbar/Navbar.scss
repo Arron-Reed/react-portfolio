@@ -7,12 +7,11 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 99;
   border-bottom: 2px solid rgba(255, 255, 255, 0.5);
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
   background-color: rgba(51, 59, 80, 0.5);
   height: 9vh;
-  z-index: 99;
+  z-index: 10;
 }
 
 .logo {
@@ -92,7 +91,32 @@ nav {
   width: 40vw;
 }
 
-@media only screen and (max-width: 1199px) {
+@media only screen and (max-width: 1650px) {
+  nav {
+    padding: 7px 200px;
+  }
+
+  .logo {
+    margin-right: 150px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  nav {
+    padding: 7px 100px;
+  }
+
+  .nav .a {
+    margin-right: 100px;
+  }
+
+  .logo {
+    margin-right: 100px;
+  }
+}
+
+/*
+@media only screen and (max-width: 1187px) {
   .logo {
     display: none;
   }
@@ -190,3 +214,4 @@ nav {
     width: 41vw;
   }
 }
+*/
