@@ -11,7 +11,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(./hero-me6.png);
+    background-image: url(/arron6.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -79,7 +79,7 @@
 @media only screen and (max-width: 1650px) {
   .hero {
     &::before {
-      background-image: url(./hero-me.png);
+      background-image: url(/arron.png);
     }
     .hero-left {
       width: 600px;
@@ -119,7 +119,7 @@
 @media only screen and (max-width: 1400px) {
   .hero {
     &::before {
-      background-image: url(./hero-me3.png);
+      background-image: url(/arron3.png);
     }
     .hero-left {
       width: 550px;
@@ -158,7 +158,7 @@
 @media only screen and (max-width: 1187px) {
   .hero {
     &::before {
-      background-image: url(./hero-me2.png);
+      background-image: url(/arron2.png);
       z-index: 0;
     }
     .hero-left {
@@ -215,15 +215,14 @@
           font-size: 2rem;
         }
       }
-      }
     }
   }
-
+}
 
 @media only screen and (max-width: 760px) {
   .hero {
     &::before {
-      background-image: url(./hero-me4.png);
+      background-image: url(/arron4.png);
       z-index: 0;
     }
     .hero-left {
@@ -257,6 +256,15 @@
           }
         }
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .hero {
+    &::before {
+      background-image: url(/hero-mobile.png);
+      z-index: 0;
     }
   }
 }
