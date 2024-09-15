@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.hamburger-container {
+  position: relative;
+}
+
+.burger-menu {
+  height: 100%;
+  width: 4em;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center;
+  cursor: pointer;
+}
+
+.burger-bar {
+  display: none;
+  width: 2.5em;
+  height: 0.35em;
+  background-color: #fff;
+  border-radius: 0.5em;
+  transition: transform 0.5s ease;
+  margin: 0.28em 0;
+  z-index: 100;
+}
+
+.menu {
+  width: 15em;
+  height: 100vh;
+  background-color: rgb(37, 39, 53);
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu.visible {
+  display: flex;
+}
+
+.menu-item {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 2em;
+  margin: 20px;
+}
+
+/* Animation for burger bars */
+.burger-bar.clicked:nth-child(1) {
+  transform: rotate(45deg) translate(0.75em, 1.25em);
+}
+
+.burger-bar.clicked:nth-child(2) {
+  transform: scale(0.1);
+}
+
+.burger-bar.clicked:nth-child(3) {
+  transform: rotate(135deg) translate(-0.5em, 1em);
+}
+
+.burger-bar.unclicked {
+  transform: rotate(0) translate(0);
+}
+
+@media only screen and (max-width: 900px) {
+    .burger-bar {
+        display: block;
+    }
+}
