@@ -85,6 +85,20 @@ nav {
   }
 }
 
+@media only screen and (max-width: 1187px) {
+  nav {
+    padding: 7px 50px;
+  }
+
+  .nav .a {
+    margin-right: 50px;
+  }
+
+  .logo {
+    margin-right: 90px;
+  }
+}
+
 @media only screen and (max-width: 1000px) {
   nav {
     padding: 7px 10px;
