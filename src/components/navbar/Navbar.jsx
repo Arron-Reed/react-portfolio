@@ -20,11 +20,11 @@ const Navbar = () => {
         </a>
       </div>
       <div className={`nav ${isMenuOpen ? "mobile-open" : ""}`}>
-        <a href="#" className="a">
-          Home
-        </a>
         <a href="#about" className="a">
           About
+        </a>
+        <a href="#skills" className="a">
+          Skills
         </a>
         <a href="#projects" className="a">
           Projects

@@ -1,6 +1,9 @@
 .projects {
-  background-color: #fff;
+  position: relative;
   padding-top: 11vh;
+  background-image: url(/projectBg.png);
+  background-attachment: fixed;
+  background-size: cover;
 
   .header {
     text-align: center;
@@ -22,9 +25,13 @@
 
   .project-container {
     .project-box {
-      background-color: #eee;
-      border: 1px solid blue;
-      border-radius: 30px;
+      backdrop-filter: blur(15px) saturate(180%);
+      -webkit-backdrop-filter: blur(15px) saturate(180%);
+      background-color: rgba(255, 255, 235, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.125);
+      border-radius: 12px;
+      filter: drop-shadow(0 20px 10px rgba(0, 0, 0, 0.125));
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.125);
       margin: 30px 222px;
       overflow: hidden;
 
@@ -63,19 +70,22 @@
 
         .project-content {
           width: 650px;
-          margin: 0 25px;
+          display: flex;
+          flex-direction: column;
+  
 
-          .title {
-            padding-top: 25px;
+          .tech-icons {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
 
-            h3 {
-              font-size: 2rem;
+            .tech-icon {
+              width: 80px;
+              height: auto;
             }
           }
 
           .description {
-            padding-top: 30px;
-
             p {
               font-size: 20px;
               color: #5a5a5a;
@@ -83,15 +93,57 @@
             }
           }
 
-          .tech-icons {
+          .button-box {
             display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin-top: 20px;
+            justify-content: center;
 
-            .tech-icon {
-              width: 80px;
-              height: auto;
+            button {
+              display: flex;
+              align-items: center;
+              border: none;
+              padding: 12px 24px;
+              border-radius: 24px;
+              font-size: 1.4rem;
+              cursor: pointer;
+            }
+            .github {
+              margin-right: 10px;
+              color: #7fc6e4;
+              border: 3px solid #7fc6e4;
+              i {
+                color: #7fc6e4;
+                font-size: 2rem;
+                margin-right: 10px;
+              }
+              transition: all 0.3s ease;
+            }
+
+            .github:hover {
+              transform: scale(1.125);
+              color: #5a5a5a;
+              border-color: #5a5a5a;
+              i {
+                color: #5a5a5a;
+              }
+              transition: all 0.3s ease;
+            }
+
+            .website {
+              background: #7fc6e4;
+              margin-left: 10px;
+              color: #fff;
+              i {
+                color: #fff;
+                font-size: 2rem;
+                margin-right: 10px;
+              }
+              transition: all 0.3s ease;
+            }
+            .website:hover {
+              transform: scale(1.125);
+              border-color: rgba(255, 255, 255, 0.9);
+              filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.125));
+              transition: all 0.3s ease;
             }
           }
         }
@@ -99,6 +151,7 @@
     }
   }
 }
+
 @media only screen and (max-width: 1650px) {
   .projects {
     .header {

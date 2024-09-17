@@ -8,23 +8,20 @@ const Modal = ({ isOpen, onClose }) => {
     } else {
       document.body.style.overflow = "auto";
     }
-    /* Do I really need this block of code?
     return () => {
       document.body.style.overflow = "auto";
     };
   }, [isOpen]);
-*/
-  });
 
   if (!isOpen) return null;
 
-  const handleOutsideClick = (e) => {
-    if (e.target === e.currentTarget) {
+  const handleClick = (e) => {
+    if (e.target === e.currentTarget || e.target.tagName === "IMG") {
       onClose();
     }
   };
   return (
-    <div className="modal-outside" onClick={handleOutsideClick}>
+    <div className="modal-outside" onClick={handleClick}>
       <div className="modal">
         <button className="modal-close" onClick={onClose}>
           &times;

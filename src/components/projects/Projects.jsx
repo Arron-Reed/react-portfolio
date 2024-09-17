@@ -45,7 +45,7 @@ const Projects = () => {
                 />
               </div>
               <div className="project-content">
-              <div className="tech-icons">
+                <div className="tech-icons">
                   {project.technologies.map((technologies, idx) => (
                     <img
                       key={idx}
@@ -57,6 +57,26 @@ const Projects = () => {
                 </div>
                 <div className="description">
                   <p>{project.description}</p>
+                </div>
+                <div className="button-box">
+                  {project.github && (
+                    <button
+                      className="github"
+                      onClick={() => window.open(project.github, "_blank")}
+                    >
+                      <i id="github" className="fa-brands fa-github"></i>Veiw
+                      Github
+                    </button>
+                  )}
+                  {project.website && (
+                    <button
+                      className="website"
+                      onClick={() => window.open(project.website, "_blank")}
+                    >
+                      <i className="fa-solid fa-globe"></i>
+                      View Website
+                    </button>
+                  )}
                 </div>
               </div>
             </div>

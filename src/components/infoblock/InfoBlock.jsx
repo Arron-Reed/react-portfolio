@@ -9,6 +9,7 @@ const InfoBlock = () => {
   const closeModal = () => setModalOpen(false);
 
   return (
+    <div className="infoBlock-container">
     <div className="infoBlock">
       <div className="infoBlock-top">
         <img src="ARlogo-column.png" alt="Arron Reed" />
@@ -26,6 +27,7 @@ const InfoBlock = () => {
       <button onClick={openModal}>See my CV</button>
 
       <Modal isOpen={modalOpen} onClose={closeModal} />
+    </div>
     </div>
   );
 };

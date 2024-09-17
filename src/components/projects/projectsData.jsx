@@ -31,6 +31,8 @@ const projectsData = [
       { name: "Zustand", icon: "./zustand.png" },
       { name: "CSS", icon: "./css.png" },
     ],
+    website: "https://www.arronreed.com/weather-app",
+    github: "https://github.com/Arron-Reed/u07-Weather-App-Arron-Reed"
   },
   {
     id: 3,

@@ -1,45 +1,47 @@
-.infoBlock {
+.infoBlock-container {
   display: flex;
-  flex-direction: column;
-  position: absolute;
-  width: 50vw;
-  height: 60vh;
-  background: #333b50;
-  top: 93vh;
-  left: 25vw;
-  align-items: center;
-  z-index: 10;
+  justify-content: center;
+  margin: -30vh 25vw 0;
 
-  .infoBlock-top {
-    margin-top: 60px;
+  .infoBlock {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    background: #333b50;
     align-items: center;
+    z-index: 10;
+    padding-bottom: 30px;
 
-    img {
-      width: 120px;
+    .infoBlock-top {
+      margin-top: 60px;
+      align-items: center;
+
+      img {
+        width: 120px;
+      }
+    }
+
+    .infoBlock-text {
+      color: #ffffff;
+      align-items: center;
+      text-align: center;
+      font-size: 1.5rem;
+      margin-top: 50px;
+      padding: 0 50px;
+    }
+
+    button {
+      background-color: #eae6dc;
+      width: 300px;
+      height: 70px;
+      color: #333;
+      border-radius: 10px;
+      margin-top: 50px;
+      font-size: 1.5rem;
+      font-weight: 400;
     }
   }
-
-  .infoBlock-text {
-    color: #ffffff;
-    align-items: center;
-    text-align: center;
-    font-size: 1.5rem;
-    margin-top: 50px;
-    padding: 0 50px;
-  }
-
-  button {
-    background-color: #eae6dc;
-    width: 300px;
-    height: 70px;
-    color: #333;
-    border-radius: 10px;
-    margin-top: 50px;
-    font-size: 1.5rem;
-    font-weight: 400;
-  }
 }
-
 @media only screen and (max-width: 1650px) {
   .infoBlock {
     .infoBlock-text {
@@ -54,56 +56,56 @@
 }
 
 @media only screen and (max-width: 1400px) {
-  .infoBlock {
-    width: 60vw;
-    left: 20vw;
+  .infoBlock-container {
+    margin: -30vh 20vw 0;
   }
 }
 
 @media only screen and (max-width: 1130px) {
-  .infoBlock {
-    width: 70vw;
-    left: 15vw;
-    z-index: 10;
-    .infoBlock-text {
-      font-size: 1.4rem;
-      margin-top: 25px;
-    }
+  .infoBlock-container {
+    margin: -30vh 15vw 0;
 
-    button {
-      margin-top: 25px;
+    .infoBlock {
+      .infoBlock-text {
+        font-size: 1.4rem;
+        margin-top: 25px;
+      }
+
+      button {
+        margin-top: 25px;
+      }
     }
   }
 }
 
 @media only screen and (max-width: 900px) {
-  .infoBlock {
-    width: 80vw;
-    left: 10vw;
-    .infoBlock-text {
-      font-size: 1.4rem;
-      margin-top: 35px;
-    }
-
-    .infoBlock-top {
-      margin-top: 40px;
-      align-items: center;
-
-      img {
-        width: 100px;
+  .infoBlock-container {
+    margin: -30vh 10vw 0;
+    .infoBlock {
+      z-index: 0;
+      .infoBlock-text {
+        font-size: 1.4rem;
+        margin-top: 35px;
       }
-    }
 
-    button {
-      margin-top: 35px;
+      .infoBlock-top {
+        margin-top: 40px;
+        align-items: center;
+
+        img {
+          width: 100px;
+        }
+      }
+
+      button {
+        margin-top: 35px;
+      }
     }
   }
 }
 
 @media only screen and (max-width: 790px) {
   .infoBlock {
-    width: 80vw;
-    left: 10vw;
     .infoBlock-text {
       font-size: 1.3rem;
       margin-top: 20px;
@@ -119,7 +121,6 @@
 
 @media only screen and (max-width: 600px) {
   .infoBlock {
-  
     .infoBlock-text {
       font-size: 1.2rem;
       margin-top: 25px;
@@ -145,10 +146,11 @@
 }
 
 @media only screen and (max-width: 450px) {
+  .infoBlock-container {
+    margin: -30vh 5vw 0;
+  
   .infoBlock {
-    width: 90vw;
     height: 60vh;
-    left: 5vw;
     z-index: 0;
     .infoBlock-top {
       margin-top: 30px;
@@ -163,8 +165,9 @@
       padding: 0 20px;
     }
 
-    button { 
-      margin-top: 20px;  
+    button {
+      margin-top: 20px;
     }
   }
+}
 }
