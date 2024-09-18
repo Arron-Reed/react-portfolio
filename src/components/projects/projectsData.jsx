@@ -1,7 +1,7 @@
 const projectsData = [
   {
     id: 1,
-    imgSrc: "./user-profile.png",
+    imgSrc: "./my-portfolio.png",
     altText: "My Portfolio",
     tag: "My Portfolio",
     title: "My Portfolio",
@@ -55,7 +55,7 @@ const projectsData = [
   },
   {
     id: 4,
-    imgSrc: "./user-profile.png",
+    imgSrc: "./CRM-Flaivy.png",
     altText: "Flaivy CRM System",
     tag: "CRM",
     title: "CRM FullStack Project",
