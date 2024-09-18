@@ -2,6 +2,25 @@ const projectsData = [
   {
     id: 1,
     imgSrc: "./user-profile.png",
+    altText: "My Portfolio",
+    tag: "My Portfolio",
+    title: "My Portfolio",
+    description:
+      "I created a portfolio project that showcases information about myself, where I explored CI/CD hosting, managing domains, and hosting smaller projects on subdomains. Through this project, I honed my React skills by implementing lightbox imaging, animations, and clean design, offering a well-rounded view of my abilities and what I can bring to potential employers.",
+    technologies: [
+      { name: "React", icon: "./react.png" },
+      { name: "JavaScript", icon: "./javascript.png" },
+      { name: "HTML", icon: "./html.png" },
+      { name: "SASS", icon: "./sass.png" },
+      { name: "Figma", icon: "./figma.png" },
+      { name: "Git", icon: "./git.png" },
+    ],
+    website: "https://www.arronreed.com",
+    github: "https://github.com/Arron-Reed/react-portfolio",
+  },
+  {
+    id: 2,
+    imgSrc: "./user-profile.png",
     altText: "User Profile",
     tag: "User Profile",
     title: "User Profile Case Study",
@@ -17,7 +36,7 @@ const projectsData = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     imgSrc: "./weather-app.png",
     altText: "Weather App",
     tag: "Weather App",
@@ -35,7 +54,7 @@ const projectsData = [
     github: "https://github.com/Arron-Reed/u07-Weather-App-Arron-Reed",
   },
   {
-    id: 3,
+    id: 4,
     imgSrc: "./user-profile.png",
     altText: "Flaivy CRM System",
     tag: "CRM",
@@ -52,8 +71,9 @@ const projectsData = [
       { name: "Bootstrap", icon: "./bootstrap.png" },
     ],
   },
+  /*
   {
-    id: 4,
+    id: 5,
     imgSrc: "./user-profile.png",
     altText: "FullStack Skifield App",
     tag: "FullStack Skifield App",
@@ -69,10 +89,11 @@ const projectsData = [
       { name: "SASS", icon: "./sass.png" },
     ],
     website: "https://www.arronreed.com/weather-app",
-    github: "https://github.com/Arron-Reed/u07-Weather-App-Arron-Reed",
+    github: "https://github.com/Arron-Reed/ARSE-Alpine-Resort-Search-Engine",
   },
+  
   {
-    id: 5,
+    id: 6,
     imgSrc: "./user-profile.png",
     altText: "Recipe App",
     tag: "Recipe App",
@@ -87,27 +108,9 @@ const projectsData = [
       { name: "mySql", icon: "./mySql.png" },
       { name: "CSS", icon: "./css.png" },
     ],
-    website: "https://www.arronreed.com/weather-app",
+    website: "https://www.arronreed.com/recipe-app",
     github: "https://github.com/Arron-Reed/u07-Weather-App-Arron-Reed",
-  },
-  {
-    id: 6,
-    imgSrc: "./user-profile.png",
-    altText: "Arron Reeds Portfolio",
-    tag: "Arron Reeds Portfolio",
-    title: "Arron Reeds Portfolio",
-    description:
-      "I created a portfolio project that showcases information about myself, where I explored CI/CD hosting, managing domains, and hosting smaller projects on subdomains. Through this project, I honed my React skills by implementing lightbox imaging, animations, and clean design, offering a well-rounded view of my abilities and what I can bring to potential employers.",
-    technologies: [
-      { name: "React", icon: "./react.png" },
-      { name: "NextJS", icon: "./next.png" },
-      { name: "Figma", icon: "./figma.png" },
-      { name: "Git", icon: "./git.png" },
-      { name: "SASS", icon: "./sass.png" },
-    ],
-    website: "https://www.arronreed.com/weather-app",
-    github: "https://github.com/Arron-Reed/u07-Weather-App-Arron-Reed",
-  },
+  }, */
 ];
 
 export default projectsData;
