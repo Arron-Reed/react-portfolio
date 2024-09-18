@@ -32,7 +32,7 @@
       border-radius: 12px;
       filter: drop-shadow(0 20px 10px rgba(0, 0, 0, 0.125));
       box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.125);
-      margin: 30px 222px;
+      margin: 50px 222px;
       overflow: hidden;
 
       .tag {
@@ -43,14 +43,12 @@
         color: black;
         font-size: 2.5rem;
         width: 100%;
-        height: 50px;
+        height: 60px;
       }
 
       .project {
         display: flex;
         justify-content: center;
-        align-items: center;
-        margin-top: 10px;
 
         &.left {
           flex-direction: row;
@@ -60,23 +58,23 @@
           flex-direction: row-reverse;
         }
 
-        .project-image {
-          border-radius: 30px;
-          width: 650px;
-          margin: 0 25px;
-          padding: 10px;
-          cursor: pointer;
+        .image-container {
+          flex: 1;
+          .project-image {
+            width: 100%;
+            cursor: pointer;
+          }
         }
 
         .project-content {
-          width: 650px;
+          flex: 1;
           display: flex;
           flex-direction: column;
-  
+          justify-content: space-evenly;
 
           .tech-icons {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-evenly;
             align-items: center;
 
             .tech-icon {
@@ -89,7 +87,8 @@
             p {
               font-size: 20px;
               color: #5a5a5a;
-              line-height: 1.8em;
+              line-height: 1.6em;
+              margin: 0 40px;
             }
           }
 
@@ -107,13 +106,15 @@
               cursor: pointer;
             }
             .github {
-              margin-right: 10px;
+              margin-right: 20px;
               color: #7fc6e4;
               border: 3px solid #7fc6e4;
+
               i {
                 color: #7fc6e4;
                 font-size: 2rem;
                 margin-right: 10px;
+                transition: all 0.3s ease;
               }
               transition: all 0.3s ease;
             }
@@ -130,7 +131,7 @@
 
             .website {
               background: #7fc6e4;
-              margin-left: 10px;
+              margin-left: 20px;
               color: #fff;
               i {
                 color: #fff;
@@ -163,44 +164,17 @@
 
     .project-container {
       .project-box {
-        margin: 30px 200px;
+        margin: 50px 200px;
 
         .project {
-          .project-image {
-            width: 450px;
-            margin: 0 0px;
-            padding: 0px;
-          }
-
           .project-content {
-            width: 650px;
-            margin: 0 25px;
-
-            .tag {
-              font-size: 1.4rem;
-              padding: 10px 25px;
-            }
-
-            .title {
-              padding-top: 5px;
-
-              h3 {
-                font-size: 1.8rem;
-              }
-            }
-
             .description {
-              padding-top: 10px;
-
               p {
-                font-size: 20px;
                 line-height: 1.2em;
               }
             }
 
             .tech-icons {
-              margin: 10px;
-
               .tech-icon {
                 width: 70px;
                 height: auto;
@@ -213,54 +187,115 @@
   }
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1500px) {
   .projects {
-    .bottom {
-      display: none;
+    .header {
+      .bottom {
+        display: none;
+      }
     }
     .project-container {
       .project-box {
-        margin: 30px 100px;
+        margin: 50px 150px;
 
         .project {
-          .project-image {
-            width: 450px;
-            margin: 0 0px;
-            padding: 0px;
-          }
-
           .project-content {
-            width: 650px;
-            margin: 0 25px;
-
-            .tag {
-              font-size: 1.4rem;
-              padding: 10px 25px;
-            }
-
-            .title {
-              padding-top: 5px;
-
-              h3 {
-                font-size: 1.8rem;
-              }
-            }
-
             .description {
-              padding-top: 10px;
-
               p {
                 font-size: 20px;
-                line-height: 1.2em;
+                margin: 0 20px;
               }
             }
 
-            .tech-icons {
-              margin: 10px;
+            .button-box {
+              button {
+                padding: 10px 20px;
+                font-size: 1.2rem;
+              }
+              .github {
+                margin-right: 10px;
+                border: 2px solid #7fc6e4;
+                i {
+                  font-size: 1.7rem;
+                }
+              }
 
+              .website {
+                margin-left: 10px;
+
+                i {
+                  font-size: 1.7rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1350px) {
+  .projects {
+    .project-container {
+      .project-box {
+        margin: 50px 60px;
+
+        .tag {
+          font-size: 2.2rem;
+          height: 50px;
+        }
+
+        .project {
+          .project-content {
+            .description {
+              p {
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .projects {
+    .project-container {
+      .project-box {
+        margin: 50px 40px;
+        .project {
+          .project-content {
+            .tech-icons {
               .tech-icon {
-                width: 70px;
-                height: auto;
+                width: 60px;
+              }
+            }
+            .description {
+              p {
+                font-size: 16px;
+                margin: 0 15px;
+              }
+            }
+            .button-box {
+              button {
+                padding: 6px 10px;
+                font-size: 1rem;
+              }
+              .github {
+                margin-right: 7px;
+                i {
+                  font-size: 1.4rem;
+                }
+              }
+
+              .website {
+                margin-left: 7px;
+
+                i {
+                  font-size: 1.4rem;
+                }
               }
             }
           }

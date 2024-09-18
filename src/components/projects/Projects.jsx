@@ -37,7 +37,10 @@ const Projects = () => {
               className={`project ${index % 2 === 0 ? "left" : "right"}`}
               key={project.id}
             >
-              <div onClick={() => openLightbox(project.imgSrc)}>
+              <div
+                className="image-container"
+                onClick={() => openLightbox(project.imgSrc)}
+              >
                 <img
                   src={project.imgSrc}
                   alt={project.altText}

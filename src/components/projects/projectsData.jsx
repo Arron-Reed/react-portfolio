@@ -8,12 +8,12 @@ const projectsData = [
     description:
       "I designed a user profile for Flaivy's website as part of my examination project. I researched competitors, interviewed users to identify key features, and implemented a full-stack solution with seamless front-end and back-end integration. The project used Bootstrap, CSS, HTML, React, Next.js, and TypeScript, with a focus on UX/UI design.",
     technologies: [
-      { name: "React", icon: "./react.png" },
       { name: "NextJS", icon: "./next.png" },
-      { name: "Figma", icon: "./figma.png" },
-      { name: "PostgreSQL", icon: "./postgres.png" },
+      { name: "React", icon: "./react.png" },
       { name: "TypeScript", icon: "./typescript.png" },
+      { name: "PostgreSQL", icon: "./postgres.png" },
       { name: "Bootstrap", icon: "./bootstrap.png" },
+      { name: "Figma", icon: "./figma.png" },
     ],
   },
   {
@@ -32,11 +32,11 @@ const projectsData = [
       { name: "CSS", icon: "./css.png" },
     ],
     website: "https://www.arronreed.com/weather-app",
-    github: "https://github.com/Arron-Reed/u07-Weather-App-Arron-Reed"
+    github: "https://github.com/Arron-Reed/u07-Weather-App-Arron-Reed",
   },
   {
     id: 3,
-    imgSrc: "./project1.png",
+    imgSrc: "./user-profile.png",
     altText: "Flaivy CRM System",
     tag: "CRM",
     title: "CRM FullStack Project",
@@ -54,7 +54,7 @@ const projectsData = [
   },
   {
     id: 4,
-    imgSrc: "./project2.png",
+    imgSrc: "./user-profile.png",
     altText: "FullStack Skifield App",
     tag: "FullStack Skifield App",
     title: "FullStack Skifield App",
@@ -68,27 +68,31 @@ const projectsData = [
       { name: "Git", icon: "./git.png" },
       { name: "SASS", icon: "./sass.png" },
     ],
+    website: "https://www.arronreed.com/weather-app",
+    github: "https://github.com/Arron-Reed/u07-Weather-App-Arron-Reed",
   },
   {
     id: 5,
-    imgSrc: "./recipe-app.png",
+    imgSrc: "./user-profile.png",
     altText: "Recipe App",
     tag: "Recipe App",
     title: "FullStack Recipe App",
     description:
       "I designed and built a recipe app that integrated with the Spoonacular API, allowing users to search for recipes based on specific criteria, including ingredients they had on hand. The app featured sorting and filtering options to personalize recipe results. This was my first project using Angular and TypeScript, and I connected it to a PHP backend (Laravel) for user authentication and saving favorite recipes using a mySQL database.",
     technologies: [
-        { name: "Angular", icon: "./angular.png" },
-        { name: "JavaScript", icon: "./javascript.png" },
-        { name: "Laravel", icon: "./laravel.png" },
-        { name: "PHP", icon: "./php.png" },
-        { name: "mySql", icon: "./mySql.png" },
-        { name: "CSS", icon: "./css.png" },
+      { name: "Angular", icon: "./angular.png" },
+      { name: "JavaScript", icon: "./javascript.png" },
+      { name: "Laravel", icon: "./laravel.png" },
+      { name: "PHP", icon: "./php.png" },
+      { name: "mySql", icon: "./mySql.png" },
+      { name: "CSS", icon: "./css.png" },
     ],
+    website: "https://www.arronreed.com/weather-app",
+    github: "https://github.com/Arron-Reed/u07-Weather-App-Arron-Reed",
   },
   {
     id: 6,
-    imgSrc: "./portfolio.png",
+    imgSrc: "./user-profile.png",
     altText: "Arron Reeds Portfolio",
     tag: "Arron Reeds Portfolio",
     title: "Arron Reeds Portfolio",
@@ -101,6 +105,8 @@ const projectsData = [
       { name: "Git", icon: "./git.png" },
       { name: "SASS", icon: "./sass.png" },
     ],
+    website: "https://www.arronreed.com/weather-app",
+    github: "https://github.com/Arron-Reed/u07-Weather-App-Arron-Reed",
   },
 ];
 
