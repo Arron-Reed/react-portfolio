@@ -235,7 +235,7 @@
   }
 }
 
-@media only screen and (max-width: 1350px) {
+@media only screen and (max-width: 1370px) {
   .projects {
     .project-container {
       .project-box {
@@ -296,6 +296,200 @@
                 i {
                   font-size: 1.4rem;
                 }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .projects {
+    .header {
+      h2 {
+        font-size: 40px;
+        margin-bottom: 0px;
+      }
+    }
+    .project-container {
+      .project-box {
+        margin: 40px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 915px) {
+  .projects {
+    .project-container {
+      .project-box {
+        margin: 40px 80px;
+        .project {
+          &.left {
+            flex-direction: column;
+          }
+
+          &.right {
+            flex-direction: column;
+          }
+          .project-content {
+            .tech-icons {
+              padding: 20px 0;
+              .tech-icon {
+                width: 70px;
+              }
+            }
+            .description {
+              p {
+                font-size: 18px;
+                margin: 0px 30px;
+                padding-bottom: 20px;
+              }
+            }
+            .button-box {
+              padding-bottom: 20px;
+              button {
+                padding: 10px 15px;
+                font-size: 1rem;
+              }
+              .github {
+                margin-right: 7px;
+                i {
+                  font-size: 1.4rem;
+                }
+              }
+
+              .website {
+                margin-left: 7px;
+
+                i {
+                  font-size: 1.4rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .projects {
+    .project-container {
+      .project-box {
+        margin: 30px;
+        .project {
+          .project-content {
+            .tech-icons {
+              .tech-icon {
+                width: 50px;
+              }
+            }
+            .description {
+              p {
+                font-size: 16px;
+                margin: 0px 15px;
+                padding-bottom: 20px;
+              }
+            }
+            .button-box {
+              padding-bottom: 20px;
+              button {
+                padding: 7px 10px;
+                font-size: 1rem;
+              }
+              .github {
+                margin-right: 7px;
+                i {
+                  font-size: 1.3rem;
+                }
+              }
+
+              .website {
+                margin-left: 7px;
+
+                i {
+                  font-size: 1.4rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .projects {
+    .project-container {
+      .project-box {
+        margin: 30px;
+        .tag {
+          font-size: 1.8rem;
+          height: 40px;
+        }
+        .project {
+          .project-content {
+            .tech-icons {
+              padding: 15px;
+              .tech-icon {
+                width: 40px;
+              }
+            }
+            .description {
+              p {
+                font-size: 0.9rem;
+                line-height: 0.9rem;
+                margin: 0px 15px;
+                padding-bottom: 15px;
+              }
+            }
+            .button-box {
+              padding-bottom: 15px;
+              button {
+                padding: 6px 9px;
+                font-size: 0.9rem;
+              }
+              .github {
+                margin-right: 7px;
+                i {
+                  font-size: 1.3rem;
+                }
+              }
+
+              .website {
+                margin-left: 7px;
+
+                i {
+                  font-size: 1.4rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .projects {
+    .project-container {
+      .project-box {
+        margin: 20px;
+        .tag {
+          font-size: 1.5rem;
+          height: 30px;
+        }
+        .project {
+          .project-content {
+            .tech-icons {
+              .tech-icon {
+                width: 35px;
               }
             }
           }

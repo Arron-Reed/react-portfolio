@@ -67,7 +67,7 @@ const Projects = () => {
                       className="github"
                       onClick={() => window.open(project.github, "_blank")}
                     >
-                      <i id="github" className="fa-brands fa-github"></i>Veiw
+                      <i id="github" className="fa-brands fa-github"></i>
                       Github
                     </button>
                   )}
@@ -77,7 +77,7 @@ const Projects = () => {
                       onClick={() => window.open(project.website, "_blank")}
                     >
                       <i className="fa-solid fa-globe"></i>
-                      View Website
+                      Website
                     </button>
                   )}
                 </div>
