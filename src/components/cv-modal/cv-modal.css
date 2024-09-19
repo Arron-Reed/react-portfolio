@@ -10,25 +10,49 @@
   align-items: center;
   z-index: 1000;
 }
-
-.modal {
+.modal-outside .modal {
   position: relative;
 }
-.modal .modal-close {
+.modal-outside .modal .modal-close {
   position: absolute;
-  top: -50px;
-  right: -110px;
+  top: 6px;
+  right: 30px;
   background: none;
   border: none;
-  font-size: 40px;
+  font-size: 50px;
   color: #fff;
   cursor: pointer;
   z-index: 1001;
+  transition: ease-in 0.3s;
 }
-.modal .modal-close:hover {
+.modal-outside .modal .modal-close:hover {
   color: #ccc;
+  transform: scale(1.2);
 }
-.modal .modal-image {
+.modal-outside .modal .modal-content .modal-image {
   height: 95vh;
   border-radius: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+  .modal-outside .modal .modal-close {
+    top: 42px;
+    right: 19px;
+  }
+  .modal-outside .modal .modal-content .modal-image {
+    margin-top: 50px;
+    height: 85vh;
+  }
+}
+@media only screen and (max-width: 510px) {
+  .modal-outside .modal .modal-close {
+    top: -5px;
+    right: 9px;
+    font-size: 35px;
+  }
+  .modal-outside .modal .modal-content .modal-image {
+    margin-top: 0px;
+    width: 90vw;
+    height: auto;
+  }
 }/*# sourceMappingURL=cv-modal.css.map */

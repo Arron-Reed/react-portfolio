@@ -35,10 +35,10 @@ const About = () => {
             </div>
             <div className="box-content">
               <div className="title">
-                <h4>Web Design</h4>
+                <h4>Communication</h4>
               </div>
               <div className="desc">
-                <p>I have complete 125+ websites design for my clients</p>
+                <p>I excel at clearly sharing ideas, ensuring everyone is on the same page and projects run smoothly</p>
               </div>
             </div>
           </div>
@@ -51,10 +51,10 @@ const About = () => {
             </div>
             <div className="box-content">
               <div className="title">
-                <h4>Web Design</h4>
+                <h4>Problem Solving</h4>
               </div>
               <div className="desc">
-                <p>I have complete 125+ websites design for my clients</p>
+                <p>I approach challenges with critical thinking, finding efficient solutions that enhance development</p>
               </div>
             </div>
           </div>
@@ -67,10 +67,10 @@ const About = () => {
             </div>
             <div className="box-content">
               <div className="title">
-                <h4>Web Design</h4>
+                <h4>Collaboration</h4>
               </div>
               <div className="desc">
-                <p>I have complete 125+ websites design for my clients</p>
+                <p>I thirive in team settings, working effectively with other to achieve shared goals and deliver results</p>
               </div>
             </div>
           </div>

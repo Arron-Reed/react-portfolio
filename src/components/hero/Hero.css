@@ -11,7 +11,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(./hero-me6.png);
+  background-image: url(/arron6.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -68,7 +68,7 @@
 
 @media only screen and (max-width: 1650px) {
   .hero::before {
-    background-image: url(./hero-me.png);
+    background-image: url(/arron.png);
   }
   .hero .hero-left {
     width: 600px;
@@ -98,7 +98,7 @@
 }
 @media only screen and (max-width: 1400px) {
   .hero::before {
-    background-image: url(./hero-me3.png);
+    background-image: url(/arron3.png);
   }
   .hero .hero-left {
     width: 550px;
@@ -127,8 +127,7 @@
 }
 @media only screen and (max-width: 1187px) {
   .hero::before {
-    background-image: url(./hero-me2.png);
-    z-index: 0;
+    background-image: url(/arron2.png);
   }
   .hero .hero-left {
     width: 550px;
@@ -155,11 +154,24 @@
     font-size: 2.5rem;
   }
 }
+@media only screen and (max-width: 1100px) {
+  .hero::before {
+    background-attachment: scroll;
+  }
+}
 @media only screen and (max-width: 900px) {
+  .hero {
+    height: auto;
+    min-height: 122vh;
+  }
+  .hero::before {
+    background-image: url(/arron7.png);
+    z-index: 0;
+  }
   .hero .hero-left {
-    width: 550px;
+    width: 500px;
     margin-left: 20px;
-    margin-top: 130px;
+    margin-top: 220px;
   }
   .hero .hero-left .top-text h3 {
     font-size: 2.5rem;
@@ -173,8 +185,7 @@
 }
 @media only screen and (max-width: 760px) {
   .hero::before {
-    background-image: url(./hero-me4.png);
-    z-index: 0;
+    background-image: url(/arron4.png);
   }
   .hero .hero-left {
     position: relative;
@@ -201,5 +212,69 @@
   }
   .hero .hero-left .hero-icons .icon-circle #icons {
     font-size: 1.8rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .hero::before {
+    background-image: url(/hero-mobile.png);
+    z-index: 0;
+  }
+  .hero .hero-left {
+    position: relative;
+    width: 350px;
+    margin-left: 20px;
+    margin-top: 250px;
+  }
+  .hero .hero-left .top-text h3 {
+    font-size: 2rem;
+  }
+  .hero .hero-left .top-text h1 {
+    font-size: 3.2rem;
+  }
+  .hero .hero-left .top-text h2 {
+    font-size: 1.8rem;
+    margin-bottom: -10px;
+  }
+  .hero .hero-left .hero-icons {
+    z-index: 3;
+  }
+  .hero .hero-left .hero-icons .icon-circle {
+    width: 50px;
+    height: 50px;
+  }
+  .hero .hero-left .hero-icons .icon-circle #icons {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (orientation: landscape) and (max-width: 1000px) {
+  .hero {
+    height: auto; /* Avoids using 122vh in landscape mode */
+    min-height: 122vh; /* Adjust as needed */
+  }
+  .hero::before {
+    background-image: url(/arron5.png);
+    background-position: center;
+  }
+  .hero .hero-left {
+    width: 50vw;
+    margin-left: 0;
+    margin-top: 100px; /* Adjust for better spacing */
+    padding: 0 20px; /* Smaller padding for mobile landscape */
+  }
+  .hero .hero-left .top-text h3 {
+    font-size: 2rem; /* Smaller font size for landscape */
+  }
+  .hero .hero-left .top-text h1 {
+    font-size: 3rem; /* Reduce to fit better */
+  }
+  .hero .hero-left .top-text h2 {
+    font-size: 1.5rem; /* Further reduce to fit the screen */
+  }
+  .hero .hero-left .hero-icons .icon-circle {
+    width: 40px;
+    height: 40px;
+  }
+  .hero .hero-left .hero-icons .icon-circle #icons {
+    font-size: 1.5rem; /* Adjust icons size for landscape */
   }
 }/*# sourceMappingURL=Hero.css.map */

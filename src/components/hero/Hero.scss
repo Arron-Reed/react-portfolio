@@ -204,6 +204,8 @@
 
 @media only screen and (max-width: 900px) {
   .hero {
+    height: auto;
+    min-height: 122vh;
     &::before {
       background-image: url(/arron7.png);
       z-index: 0;
@@ -305,6 +307,49 @@
 
           #icons {
             font-size: 1.8rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (orientation: landscape) and (max-width: 1000px) {
+  .hero {
+    height: auto; /* Avoids using 122vh in landscape mode */
+    min-height: 122vh; /* Adjust as needed */
+    &::before {
+      background-image: url(/arron5.png);
+      
+      background-position: center;
+    }
+
+    .hero-left {
+     width: 50vw;
+      margin-left: 0;
+      margin-top: 100px; /* Adjust for better spacing */
+      padding: 0 20px; /* Smaller padding for mobile landscape */
+
+      .top-text {
+        h3 {
+          font-size: 2rem; /* Smaller font size for landscape */
+        }
+
+        h1 {
+          font-size: 3rem; /* Reduce to fit better */
+        }
+
+        h2 {
+          font-size: 1.5rem; /* Further reduce to fit the screen */
+        }
+      }
+
+      .hero-icons {
+        .icon-circle {
+          width: 40px;
+          height: 40px;
+          #icons {
+            font-size: 1.5rem; /* Adjust icons size for landscape */
           }
         }
       }

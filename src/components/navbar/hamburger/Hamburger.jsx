@@ -10,6 +10,9 @@ const Hamburger = ({ isOpen, toggleMenu }) => {
         <div className={`burger-bar ${isOpen ? "clicked" : "unclicked"}`}></div>
       </div>
       <div className={`menu ${isOpen ? "visible" : "hidden"}`}>
+      <a href="#" className="menu-item" onClick={toggleMenu}>
+          Home
+        </a>
         <a href="#about" className="menu-item" onClick={toggleMenu}>
           About
         </a>

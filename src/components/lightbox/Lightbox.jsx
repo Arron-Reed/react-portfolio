@@ -12,7 +12,7 @@ const Lightbox = ({ imgSrc, altText, onClose }) => {
   return (
     <div className="lightbox" onClick={onClose}>
       <div className="lightbox-content">
-        <button className="close-button" onClick={onClose}>x</button>
+        <button className="close-button" onClick={onClose}>&times;</button>
         <img src={imgSrc} alt={altText} />
       </div>
     </div>

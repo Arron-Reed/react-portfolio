@@ -60,9 +60,16 @@
 
         .image-container {
           flex: 1;
+          overflow: hidden;
           .project-image {
             width: 100%;
             cursor: pointer;
+            transition: transform 0.3s ease;
+          }
+
+          .project-image:hover {
+            transform: scale(1.1) rotate(1deg);
+
           }
         }
 
@@ -108,7 +115,7 @@
             .github {
               margin-right: 20px;
               color: #7fc6e4;
-              border: 3px solid #7fc6e4;
+              border: 4px solid #7fc6e4;
 
               i {
                 color: #7fc6e4;
@@ -142,6 +149,7 @@
             }
             .website:hover {
               transform: scale(1.125);
+              background-color: #5a5a5a;
               border-color: rgba(255, 255, 255, 0.9);
               filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.125));
               transition: all 0.3s ease;

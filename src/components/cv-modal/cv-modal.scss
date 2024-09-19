@@ -9,29 +9,65 @@
   justify-content: center;
   align-items: center;
   z-index: 1000;
-}
 
-.modal {
+  .modal {
     position: relative;
 
-  .modal-close {
-    position: absolute;
-    top: -50px;
-    right: -110px;
-    background: none;
-    border: none;
-    font-size: 40px;
-    color: #fff;
-    cursor: pointer;
-    z-index: 1001;
-  }
+    .modal-close {
+      position: absolute;
+      top: 6px;
+      right: 30px;
+      background: none;
+      border: none;
+      font-size: 50px;
+      color: #fff;
+      cursor: pointer;
+      z-index: 1001;
+      transition: ease-in 0.3s;
+    }
 
-  .modal-close:hover {
-    color: #ccc;
-  }
+    .modal-close:hover {
+      color: #ccc;
+      transform: scale(1.2);
+    }
+    .modal-content {
+    .modal-image {
+      height: 95vh;
+      border-radius: 20px;
+    }
+  }}
+}
 
-  .modal-image {
-    height: 95vh;
-    border-radius: 20px;
+@media only screen and (max-width: 900px) {
+  .modal-outside {
+    .modal {
+      .modal-close {
+        top: 42px;
+        right: 19px;
+      }
+      .modal-content {
+      .modal-image {
+        margin-top: 50px;
+        height: 85vh;
+      }
+    }}
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .modal-outside {
+    .modal {
+      .modal-close {
+        top: -5px;
+        right: 9px;
+        font-size: 35px;
+      }
+      .modal-content {
+      .modal-image {
+        margin-top: 0px;
+        width: 90vw;
+        height: auto;
+      }
+    }}
   }
 }

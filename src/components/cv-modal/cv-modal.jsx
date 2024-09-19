@@ -23,9 +23,9 @@ const Modal = ({ isOpen, onClose }) => {
   return (
     <div className="modal-outside" onClick={handleClick}>
       <div className="modal">
-        <button className="modal-close" onClick={onClose}>
+        <div className="modal-close" onClick={onClose}>
           &times;
-        </button>
+        </div>
         <div className="modal-content">
           <img src="./english-cv.png" alt="My CV" className="modal-image" />
         </div>
